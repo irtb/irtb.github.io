@@ -8,7 +8,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
   <meta name="theme-color" content="#202020"/>
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script>
   
   
     <meta name="keywords" content="Hexo," />
@@ -25,7 +24,7 @@
   
     <!-- stylesheets list from config.yml -->
     
-      <link rel="stylesheet" href="//cdn.bootcss.com/pure/1.0.0/pure-min.css">
+      <link rel="stylesheet" href="/css/pure-min.css">
     
       <link rel="stylesheet" href="/css/xoxo.css">
     
@@ -74,7 +73,7 @@
       
           
             
-              <li class="pure-menu-item"><a href="/live" class="pure-menu-link">撩胜于无</a></li>
+              <li class="pure-menu-item"><a href="/live" class="pure-menu-link">撩胜于无聊</a></li>
             
           
       
@@ -111,25 +110,56 @@
         <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo/" rel="tag">Hexo</a></li></ul>
       </span>
     </span>
-      <span class="slash">/</span>
-      <span class="read">
-      <span id="busuanzi_value_page_pv"></span> 点击
-    </span>
-      <span class="slash">/</span>
     </header>
 
     <div class="post-content">
       <h5 id="安装相关"><a href="#安装相关" class="headerlink" title="安装相关"></a>安装相关</h5><blockquote>
 <p>安装Hexo</p>
 </blockquote>
-<figure class="highlight plain"><figcaption><span>install -g hexo-cli```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt; 卸载Hexo</span><br><span class="line">&#96;&#96;&#96;npm uninstall hexo-cli -g</span><br></pre></td></tr></table></figure>
+<pre>npm install -g hexo-cli</pre>
+<blockquote>
+<p>卸载Hexo</p>
+</blockquote>
+<pre>npm uninstall hexo-cli -g</pre>
 
 <h5 id="写作相关"><a href="#写作相关" class="headerlink" title="写作相关"></a>写作相关</h5><blockquote>
-<p>新建文章<br>    hexo n “名字” == hexo new “名字”<br>新建一个名为”newpage”的页面，默认网址主页地址/newapge/<br>    hexo n page newpage<br>生成静态文件<br>    hexo g == hexo generate<br>发布文章<br>    hexo d == hexo -deploy<br>启动本地服务器，预览地址：<a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a><br>    hexo s == hexo server<br>清理缓存文件和已生成的静态文件<br>    hexo clean</p>
+<p>新建文章</p>
 </blockquote>
+<pre>hexo n "名字" == hexo new "名字"</pre>
+<blockquote>
+<p>新建一个名为”newpage”的页面，默认网址主页地址/newapge/</p>
+</blockquote>
+<pre>hexo n page newpage</pre>
+<blockquote>
+<p>生成静态文件</p>
+</blockquote>
+<pre>hexo g == hexo generate</pre>
+<blockquote>
+<p>发布文章</p>
+</blockquote>
+<pre>hexo d == hexo -deploy</pre>
+<blockquote>
+<p>启动本地服务器，预览地址：<a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a></p>
+</blockquote>
+<pre>hexo s == hexo server</pre>
+<blockquote>
+<p>清理缓存文件和已生成的静态文件</p>
+</blockquote>
+<pre>hexo clean</pre>
+
 <h5 id="组合使用"><a href="#组合使用" class="headerlink" title="组合使用"></a>组合使用</h5><blockquote>
-<p>清理并开启本地预览服务<br>    hexo clean &amp;&amp; hexo s<br>清理并重新生成静态文件<br>    hexo clean &amp;&amp; hexo g<br>生成后立即部署网站<br>    hexo generate -d == hexo generate -deploy</p>
+<p>清理并开启本地预览服务</p>
 </blockquote>
+<pre>hexo clean && hexo s</pre>
+<blockquote>
+<p>清理并重新生成静态文件</p>
+</blockquote>
+<pre>hexo clean && hexo g</pre>
+<blockquote>
+<p>生成后立即部署网站</p>
+</blockquote>
+<pre>hexo generate -d == hexo generate -deploy</pre>
+
 <h5 id="系统命令"><a href="#系统命令" class="headerlink" title="系统命令"></a>系统命令</h5><pre><code>hexo --help
 
 Commands:
@@ -175,36 +205,6 @@ Global Options:
 
 
   
-    <div class="post-nav">
-      <div class="post-nav-item post-nav-next">
-        
-      </div>
-  
-      <div class="post-nav-item post-nav-prev">
-          
-          <a href="/2019/12/24/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8Hexo%E4%B8%BB%E9%A2%98-xoxo/" rel="prev" title="如何使用Hexo主题 - xoxo">
-            如何使用Hexo主题 - xoxo
-          </a>
-          <span>〉</span>
-        
-      </div>
-    </div>
-  
-
-    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-    <div id="gitalk-container"></div>
-    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
-    <script type="text/javascript">
-        var gitalk = new Gitalk({
-            clientID: 'xxx',
-            clientSecret: 'xxx',
-            id: window.location.pathname,
-            repo: 'issue repo name',
-            owner: 'Github username',
-            admin: 'github username'
-        })
-        gitalk.render('gitalk-container')
-    </script>
 
 
 
