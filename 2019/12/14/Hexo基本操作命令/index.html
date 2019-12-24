@@ -119,11 +119,16 @@
     </header>
 
     <div class="post-content">
-      <pre><code>npm install -g hexo-cli # 安装Hexo
-npm uninstall hexo-cli -g # 卸载Hexo，文件夹内容
-
-
-hexo &lt;command&gt;
+      <h5 id="安装相关"><a href="#安装相关" class="headerlink" title="安装相关"></a>安装相关</h5><blockquote>
+<p>安装Hexo<br>    npm install -g hexo-cli<br>卸载Hexo<br>    npm uninstall hexo-cli -g</p>
+</blockquote>
+<h5 id="写作相关"><a href="#写作相关" class="headerlink" title="写作相关"></a>写作相关</h5><blockquote>
+<p>新建文章<br>    hexo n “名字” == hexo new “名字”<br>新建一个名为”newpage”的页面，默认网址主页地址/newapge/<br>    hexo n page newpage<br>生成静态文件<br>    hexo g == hexo generate<br>发布文章<br>    hexo d == hexo -deploy<br>启动本地服务器，预览地址：<a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a><br>    hexo s == hexo server<br>清理缓存文件和已生成的静态文件<br>    hexo clean</p>
+</blockquote>
+<h5 id="组合使用"><a href="#组合使用" class="headerlink" title="组合使用"></a>组合使用</h5><blockquote>
+<p>清理并开启本地预览服务<br>    hexo clean &amp;&amp; hexo s<br>清理并重新生成静态文件<br>    hexo clean &amp;&amp; hexo g<br>生成后立即部署网站<br>    hexo generate -d == hexo generate -deploy</p>
+</blockquote>
+<h5 id="系统命令"><a href="#系统命令" class="headerlink" title="系统命令"></a>系统命令</h5><pre><code>hexo --help
 
 Commands:
   clean     Remove generated files and cache.
@@ -146,31 +151,17 @@ Global Options:
   --debug   Display all verbose messages in the terminal
   --draft   Display draft posts
   --safe    Disable all plugins and scripts
-  --silent  Hide output on console
-
-
-
-hexo n &quot;名字&quot; == hexo new &quot;名字&quot; # 新建博文
-hexo n page newpage # 新建一个名为&quot;newpage&quot;的页面，默认网址主页地址/newapge/
-
-hexo g == hexo generate # 生成静态文件
-hexo d == hexo -deploy #
-
-hexo s == hexo server # 启动本地服务器，预览地址：http://localhost:4000/
-
-hexo clean # 清理缓存文件和已生成的静态文件
-
-
-# 命令可以组合使用
-hexo clean &amp;&amp; hexo s
-hexo clean &amp;&amp; hexo d
-# 生成后立即部署网站
-hexo generate -d == hexo generate -deploy</code></pre>
+  --silent  Hide output on console</code></pre>
     </div>
 
   </article>
   <div class="toc-container">
     
+  <div id="toc" class="toc-article">
+    <strong class="toc-title">目录</strong>
+    <ol class="toc"><li class="toc-item toc-level-5"><a class="toc-link" href="#安装相关"><span class="toc-text">安装相关</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#写作相关"><span class="toc-text">写作相关</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#组合使用"><span class="toc-text">组合使用</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#系统命令"><span class="toc-text">系统命令</span></a></li></ol>
+  </div>
+
 
   </div>
 </div>
